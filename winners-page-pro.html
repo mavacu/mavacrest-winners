@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +19,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg);
       color: var(--text);
+      line-height: 1.6;
     }
 
     header {
@@ -27,61 +27,55 @@
       color: white;
       text-align: center;
       padding: 60px 20px 40px;
-      position: relative;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-top: 0;
     }
 
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 30px 16px;
     }
 
     .winner-highlight {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
       background-color: var(--card-bg);
-      padding: 30px;
-      border-left: 6px solid gold;
+      padding: 20px;
+      border-left: 5px solid gold;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
       margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .winner-highlight img {
-      width: 220px;
+      width: 100%;
+      max-width: 280px;
       border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .winner-highlight div {
-      flex: 1;
-    }
-
-    .winner-highlight h2 {
-      margin-top: 0;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .card {
-      flex: 1 1 calc(33% - 20px);
+      flex: 1 1 100%;
+      max-width: 360px;
       background-color: var(--card-bg);
       padding: 20px;
       border-radius: 10px;
@@ -90,17 +84,17 @@
     }
 
     .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     }
 
     .cta {
       background-color: var(--primary);
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
       border-radius: 12px;
-      margin: 60px 0;
+      margin: 60px 0 40px;
     }
 
     .cta button {
@@ -109,7 +103,7 @@
       border: none;
       color: var(--primary);
       font-weight: bold;
-      padding: 14px 28px;
+      padding: 14px 24px;
       font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
@@ -122,13 +116,15 @@
 
     .faq {
       background-color: var(--card-bg);
-      padding: 30px;
+      padding: 24px;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      text-align: center;
     }
 
     .faq p {
       margin: 10px 0;
+      font-size: 0.95rem;
     }
 
     a {
@@ -142,79 +138,86 @@
       margin: 15px 0 0;
     }
 
-    @media (max-width: 900px) {
+    @media (min-width: 768px) {
       .card {
-        flex: 1 1 100%;
+        flex: 1 1 calc(33% - 20px);
       }
+
       .winner-highlight {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
       }
+
       .winner-highlight img {
-        width: 100%;
-        max-width: 300px;
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
+
+      .winner-highlight div {
+        flex: 1;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🏆 Our Lucky Winners</h1>
-    <p>See who turned their entry into an unforgettable prize</p>
-  </header>
+<header>
+  <h1>🏆 Our Lucky Winners</h1>
+  <p>See who turned their entry into an unforgettable prize</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <section class="winner-highlight">
-      <img src="https://i.imgur.com/1XkOqZr.jpg" alt="Winner holding iPhone" />
-      <div>
-        <h2>⭐ Winner of the Month – May 2025</h2>
-        <p><strong>Name:</strong> Sophie M. (Manchester, UK)</p>
-        <p><strong>Prize:</strong> iPhone 15 Pro Max</p>
-        <p><strong>Entry ID:</strong> #84152</p>
-        <p><strong>Date:</strong> May 28, 2025</p>
-        <blockquote>“I couldn’t believe it! I entered just for fun and now I’m holding the newest iPhone. Thank you, Mavacrest!”</blockquote>
-      </div>
-    </section>
+  <section class="winner-highlight">
+    <img src="https://i.imgur.com/1XkOqZr.jpg" alt="Winner holding iPhone" />
+    <div>
+      <h2>⭐ Winner of the Month – May 2025</h2>
+      <p><strong>Name:</strong> Sophie M. (Manchester, UK)</p>
+      <p><strong>Prize:</strong> iPhone 15 Pro Max</p>
+      <p><strong>Entry ID:</strong> #84152</p>
+      <p><strong>Date:</strong> May 28, 2025</p>
+      <blockquote>“I couldn’t believe it! I entered just for fun and now I’m holding the newest iPhone. Thank you, Mavacrest!”</blockquote>
+    </div>
+  </section>
 
-    <section class="grid">
-      <div class="card">
-        <h3>James T.</h3>
-        <p>📍 Birmingham, UK</p>
-        <p>🎁 Nintendo Switch OLED</p>
-        <p>📅 April 2025</p>
-        <p>🆔 #81203</p>
-      </div>
-      <div class="card">
-        <h3>Elena P.</h3>
-        <p>📍 Bristol, UK</p>
-        <p>🎁 Dyson Airwrap</p>
-        <p>📅 March 2025</p>
-        <p>🆔 #78002</p>
-      </div>
-      <div class="card">
-        <h3>Arjun S.</h3>
-        <p>📍 Leeds, UK</p>
-        <p>🎁 PlayStation 5</p>
-        <p>📅 February 2025</p>
-        <p>🆔 #74401</p>
-      </div>
-    </section>
+  <section class="grid">
+    <div class="card">
+      <h3>James T.</h3>
+      <p>📍 Birmingham, UK</p>
+      <p>🎁 Nintendo Switch OLED</p>
+      <p>📅 April 2025</p>
+      <p>🆔 #81203</p>
+    </div>
+    <div class="card">
+      <h3>Elena P.</h3>
+      <p>📍 Bristol, UK</p>
+      <p>🎁 Dyson Airwrap</p>
+      <p>📅 March 2025</p>
+      <p>🆔 #78002</p>
+    </div>
+    <div class="card">
+      <h3>Arjun S.</h3>
+      <p>📍 Leeds, UK</p>
+      <p>🎁 PlayStation 5</p>
+      <p>📅 February 2025</p>
+      <p>🆔 #74401</p>
+    </div>
+  </section>
 
-    <section class="cta">
-      <h2>🎯 Will You Be Our Next Winner?</h2>
-      <p>Join the next raffle for a chance to win big. Enter now and let fortune do the rest.</p>
-      <button>Enter a Raffle</button>
-    </section>
+  <section class="cta">
+    <h2>🎯 Will You Be Our Next Winner?</h2>
+    <p>Join the next raffle for a chance to win big. Enter now and let fortune do the rest.</p>
+    <button>Enter a Raffle</button>
+  </section>
 
-    <section class="faq">
-      <p>💬 Curious how it works? <a href="/how-it-works">See How It Works</a></p>
-      <p>📜 Legal & verified: All winners are selected using a random draw process.</p>
-      <p>🔐 No tricks. No bots. 100% transparent.</p>
-    </section>
+  <section class="faq">
+    <p>💬 Curious how it works? <a href="/how-it-works">See How It Works</a></p>
+    <p>📜 Legal & verified: All winners are selected using a random draw process.</p>
+    <p>🔐 No tricks. No bots. 100% transparent.</p>
+  </section>
 
-  </div>
+</div>
 
 </body>
 </html>
