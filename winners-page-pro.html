@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Winners – Mavacrest</title>
+  <meta name="description" content="Meet the lucky winners of Mavacrest raffles. Discover the real people who walked away with amazing prizes. Will you be next?" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --primary: #0a1f3d;
+      --accent: #e8cfa9;
+      --text: #333;
+      --bg: #f4f4f4;
+      --card-bg: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a1f3d 60%, #7da8d6 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .winner-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-left: 6px solid gold;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      margin-bottom: 40px;
+    }
+
+    .winner-highlight img {
+      width: 220px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .winner-highlight div {
+      flex: 1;
+    }
+
+    .winner-highlight h2 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(33% - 20px);
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .cta {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 12px;
+      margin: 60px 0;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      background-color: var(--accent);
+      border: none;
+      color: var(--primary);
+      font-weight: bold;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: #d8bc94;
+    }
+
+    .faq {
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .faq p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin: 15px 0 0;
+    }
+
+    @media (max-width: 900px) {
+      .card {
+        flex: 1 1 100%;
+      }
+      .winner-highlight {
+        flex-direction: column;
+        text-align: center;
+      }
+      .winner-highlight img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏆 Our Lucky Winners</h1>
+    <p>See who turned their entry into an unforgettable prize</p>
+  </header>
+
+  <div class="container">
+
+    <section class="winner-highlight">
+      <img src="https://i.imgur.com/1XkOqZr.jpg" alt="Winner holding iPhone" />
+      <div>
+        <h2>⭐ Winner of the Month – May 2025</h2>
+        <p><strong>Name:</strong> Sophie M. (Manchester, UK)</p>
+        <p><strong>Prize:</strong> iPhone 15 Pro Max</p>
+        <p><strong>Entry ID:</strong> #84152</p>
+        <p><strong>Date:</strong> May 28, 2025</p>
+        <blockquote>“I couldn’t believe it! I entered just for fun and now I’m holding the newest iPhone. Thank you, Mavacrest!”</blockquote>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>James T.</h3>
+        <p>📍 Birmingham, UK</p>
+        <p>🎁 Nintendo Switch OLED</p>
+        <p>📅 April 2025</p>
+        <p>🆔 #81203</p>
+      </div>
+      <div class="card">
+        <h3>Elena P.</h3>
+        <p>📍 Bristol, UK</p>
+        <p>🎁 Dyson Airwrap</p>
+        <p>📅 March 2025</p>
+        <p>🆔 #78002</p>
+      </div>
+      <div class="card">
+        <h3>Arjun S.</h3>
+        <p>📍 Leeds, UK</p>
+        <p>🎁 PlayStation 5</p>
+        <p>📅 February 2025</p>
+        <p>🆔 #74401</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>🎯 Will You Be Our Next Winner?</h2>
+      <p>Join the next raffle for a chance to win big. Enter now and let fortune do the rest.</p>
+      <button>Enter a Raffle</button>
+    </section>
+
+    <section class="faq">
+      <p>💬 Curious how it works? <a href="/how-it-works">See How It Works</a></p>
+      <p>📜 Legal & verified: All winners are selected using a random draw process.</p>
+      <p>🔐 No tricks. No bots. 100% transparent.</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
